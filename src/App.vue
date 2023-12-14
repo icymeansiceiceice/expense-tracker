@@ -5,6 +5,7 @@
       <Balance></Balance>
       <InComeExpense></InComeExpense>
       <TransactionList></TransactionList>
+      <AddTransaction></AddTransaction>
     </div>
   </div>
 </template>
@@ -14,6 +15,7 @@ import Header from './components/Header.vue';
 import Balance from './components/Balance.vue';
 import InComeExpense from './components/InComeExpense.vue';
 import TransactionList from './components/TransactionList.vue';
+import AddTransaction from './components/AddTransaction.vue';
 
 
 export default {
@@ -21,7 +23,9 @@ export default {
     Header,
     Balance,
     InComeExpense,
-    TransactionList
+    TransactionList,
+    AddTransaction
+    
   },
   setup () {
     
