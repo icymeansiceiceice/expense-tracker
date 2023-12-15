@@ -1,18 +1,20 @@
 <template>
     <div>
         <h4>Your Balance</h4>
-        <h1 id="balance">$0.00</h1>
+        <h1 id="balance">$ {{ total }}</h1>
     </div>
 </template>
 
-<script>
-export default {
-    setup () {
-        
+<script setup>
 
-        return {}
-    }
-}
+const props = defineProps({
+  total: {
+    type: Number,
+    required: true,
+  },
+});
+
+
 </script>
 
 <style lang="scss" scoped>
